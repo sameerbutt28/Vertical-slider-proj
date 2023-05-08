@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+   font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    height: 100vh;
+    
+}
+.slider-container{
+    position: relative;
+    overflow: hidden;
+    width:100vw;
+    height:100vh;
+}
+.left-slides{
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+
+}
+.left-slides > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.left-slides h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: -30%;
+   
+}
+.right-slides{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    transition: transform 0.5s ease-in-out;
+
+}
+.right-slides > div {
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+height: 100%;
+width: 100%;
+
+
+}
+.slider-container .action-buttons {
+    position: absolute;
+
+z-index: 100;
+}
+.slider-container .action-buttons .down-button {
+    position: absolute;
+margin-top: 60vh;
+margin-left: 35vw;
+}
+.slider-container .action-buttons .up-button {
+    position: absolute;
+margin-top: 55vh;
+margin-left: 31.90vw;
+}
+button{
+    height: 45px;
+    width: 60px;
+    border: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+    
+}
+button:hover{
+    cursor: pointer;
+    color: black;
+}
